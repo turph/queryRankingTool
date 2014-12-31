@@ -1,0 +1,28 @@
+.results{
+	float:left;width:100%;
+	.tile{
+		float:left;margin:0 20px 20px 0;padding:5px;
+		@include border-radius(3px);
+		border:1px solid $light-gray;
+		.tileTitle{
+			border-bottom:3px solid $black;font-weight:bold;
+		}
+	}	
+	.case{
+		width:31%;min-width:320px;
+		.ranking{float:right;padding:5px;margin:-5px;min-width:40px;text-align:right;}
+		.tileTitle{margin-top:1px;font-size:18px;}
+		.caseSummary{
+			float:left;width:40%;margin:10px;font-size:14px;color:$black;
+			.table{
+				margin:0 0 0 5px;color:$mid-gray;
+				.count{width:1%;padding-right:5px;text-align:right;}
+			}				
+		}
+		.tileFoot{height:3px;float:left;width:100%;margin-top:20px;}
+	}
+	.query{width:25%;}
+	.results{width:20%;}
+}
+
+
