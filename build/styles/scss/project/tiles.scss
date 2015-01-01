@@ -31,8 +31,11 @@
 		.caseSummary{}
 		.tileFoot{display:none;}
 	}
-	.results{
-		width:20%;min-width:160px;min-height:200px;
+	.result{
+		width:17%;min-width:160px;min-height:200px;text-align:center;
+		.ranking{position:absolute;bottom:5px;left:50%;padding:5px;width:40px;margin-left:-20px;}
+		img{width:100px;}
+		.productTitle{color:$mid-gray;border-bottom:1px solid $black;height:40px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
 	}
 }
 
