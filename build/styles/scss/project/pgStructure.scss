@@ -4,5 +4,16 @@
 	margin:0 0 20px 0;border-bottom:1px solid $bc-gray;
 	.breadcrumb{margin-bottom:0;padding:8px 0;}
 	h3{margin:0;}
-	.dropdown{margin:0 0 5px 0;}
+	.col-md-4{
+		text-align:right;padding:0 0 5px 0;
+		.search, .dropdown, .compare{display:inline-block;}
+		.dropdown{border-left:1px solid $lightest-gray;border-right:1px solid $lightest-gray;padding:0 5px;margin:0 5px;}
+		.compare{
+			font-size:24px;vertical-align:bottom;
+			a{
+				color:$mid-gray;
+				&:hover{color:$bc-lt-blue;};
+			}
+		}
+	}
 }
