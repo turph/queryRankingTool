@@ -4,12 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<meta name="description" content="">
 	<meta name="keywords" content="">        
 
 	<title>Eye Of Raul: Results View</title>		
-
+	<script src="../build/lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../build/lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" media="screen" href="assets/css/app.css">      
 </head>
 
@@ -30,16 +30,19 @@
 					<div class="col-md-8"><h3>jackets</h3></div>
 					<div class="col-md-4"> 
 						<div class="search"></div>
-						<div class="dropdown">
+						<div class="dropdown right">
+							Sort:
 						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-						    Sort
+								Index Order | Default Result Order
 						    <span class="caret"></span>
 						  </button>
 						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								<li role="presentation" class="dropdown-header">Index Order</li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Default Result Order</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation" class="dropdown-header">Result Ranking</li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rank: High to Low</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rank: Low to High</a></li>
 						  </ul>
 						</div>
 					</div>

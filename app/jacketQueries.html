@@ -9,7 +9,8 @@
 	<meta name="keywords" content="">        
 
 	<title>Eye Of Raul: Query View</title>		
-
+	<script src="../build/lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../build/lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" media="screen" href="assets/css/app.css">      
 </head>
 
@@ -30,16 +31,20 @@
 					<div class="col-md-8"><h3>Jacket Queries</h3></div>
 					<div class="col-md-4"> 
 						<div class="search"></div>
-						<div class="dropdown">
+						<div class="dropdown right">
+							Sort:
 						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-						    Sort
+								Query Rank | Incomplete: High to Low
 						    <span class="caret"></span>
 						  </button>
 						  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+								<li role="presentation" class="dropdown-header">Query Rank</li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Incomplete: High to Low</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Incomplete: Low to High</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation" class="dropdown-header">Result Rank</li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Incomplete: High to Low</a></li>
+						    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Incomplete: Low to High</a></li>
 						  </ul>
 						</div>
 					</div>
