@@ -45,4 +45,24 @@
 	}
 }
 
+.compare{
+	.results{
+		width:80%;
+	}
+	.comparePanel{
+		position:absolute;right:0;padding:10px;width:320px;height:100%;background-color:$lightest-gray;border-left:1px solid $mid-gray;
+		.title{margin:0 0 20px 0;border-top:3px solid $black;text-align:center;text-transform:uppercase;font-size:16px;font-weight:bold;}
+		section{
+			margin:0 0 40px 0;
+			.title{color:$mid-gray;border-top:none;border-bottom:1px solid $mid-gray;text-transform:capitalize;text-align:left;font-size:14px;}
+			.checkbox{
+				border-bottom:1px solid $light-gray;
+				.name{color:$black;font-weight:bold;}
+				.dateStamp{color:$mid-gray;display:block;}
+				.glyphicon{color:$mid-gray;float:right;}
+			}
+		}
+	}
+}
+
 
