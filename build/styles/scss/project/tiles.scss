@@ -60,6 +60,7 @@
 			.productTitle{font-size:12px;height:35px;}
 			.ranking{position:absolute;bottom:5px;left:50%;padding:5px;width:30px;margin-left:-17px;}
 		}
+		.snapTitle{margin: 0 10px 12px 0;color:$mid-gray;border-bottom:1px solid $light-gray;font-size:12px;font-weight:bold;}
 	}		
 	.ranking{display:inline-block;@include border-radius();padding:5px;margin:0 5px 0 0;min-width:33px;text-align:right;}
 	.percentChange{
@@ -74,7 +75,7 @@
 		margin:20px 0;
 		.panel{
 			border-color:$light-gray;margin:0 0 8px 0;
-			&:hover{border-color:$bc-lt-blue;}
+			&:hover{border-color:$bc-lt-blue;background-color:$clouds;}
 			.panel-heading{
 				padding:8px;border-radius:none;
 				a{
@@ -83,6 +84,7 @@
 				}
 			}
 		}
+		.panel-body{background-color:$white;}
 	}
 
 	.comparePanel{
