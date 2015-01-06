@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">        
 
-	<title>Eye Of Raul: Case View</title>		
+	<title>Eye Of Raul: Comparison</title>		
 	<script src="../build/lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../build/lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" media="screen" href="assets/css/app.css">      
@@ -16,10 +16,10 @@
 <body>
 	<div id="" class="compare">
 		<div class="appHeader">
-			Eye Of Raul
+			Eye Of Raul - NDCG
 			<div class="dropdown">
 				Site:
-			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+			  <button class="btn btn-default dropdownToggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 					Backcountry
 			    <span class="caret"></span>
 			  </button>
@@ -39,12 +39,12 @@
 					</ol>
 				</div>
 				<div>
-					<div class="col-md-8"><span class="ranking rank7">75</span><h3>Home - All Cases</h3></div>
+					<div class="col-md-8"><h3>Index Comparison</h3></div>
 					<div class="col-md-4"> 
 						<div class="search"></div>
 						<div class="dropdown">
 							Sort:
-						  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+						  <button class="btn btn-default dropdownToggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 								Case Ranking | Rank: High to Low
 						    <span class="caret"></span>
 						  </button>
@@ -68,23 +68,380 @@
 				</div>
 			</div>
 			<div class="results">
-				<div class="compareTitle">Case Comparison</div>
-				<div class="compareResults">
-					<div class="title"><span class="ranking rank8">75</span><span class="ranking rank6">52</span> existing index vs rule change</div>
-					<div class="panel-group">
-						<a href><div class="panel panel-defaul"><span class="ranking rank10">99</span><span class="ranking rank9">89</span>Jacket Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank9">88</span><span class="ranking rank8">72</span>Ski Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank8">77</span><span class="ranking rank7">62</span>Snowboard Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank7">66</span><span class="ranking rank3">24</span>Climbing Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank6">55</span><span class="ranking rank10">94</span>Hike & Camp Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank5">44</span><span class="ranking rank5">42</span>Bike Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank4">33</span><span class="ranking rank4">33</span>Running Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank3">22</span><span class="ranking rank5">59</span>Paddle Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank2">11</span><span class="ranking rank2">14</span>Fly Fishing Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank1">1</span><span class="ranking rank1">1</span>Footwear Queries</div></a>
-						<a href><div class="panel panel-defaul"><span class="ranking rank0">0</span><span class="ranking rank0">0</span>Yoga Queries</div></a>
+					<div class="title"><span class="ranking rank8">75</span><span class="ranking rank6">52</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">30.7%</span></div>Case Comparison <span class="snaps">(existing index vs rule change)</span></div>
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-defaul"><!-- Panel0 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse0" class="collapsed"><span class="ranking rank10">99</span><span class="ranking rank9">89</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">10.1%</span></div>Jacket Queries</a>
+							</div>
+							<div id="collapse0" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									<div class="panel panel-defaul"><!-- Panel1-0 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-0" class="collapsed"><span class="ranking rank9">87</span><span class="ranking rank10">99</span><div class="percentChange positive"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="percentage">12.1%</span></div>jackets</a>
+										</div>
+										<div id="collapse1-0" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												<div class="compareProducts">
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/small/TNF/TNF9063/SNOBLUBL.jpg">
+														<div class="productTitle">The North Face Anden Triclimate Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/small/ARC/ARC3662/POSBACEXC.jpg">
+														<div class="productTitle">Arc'teryx Cerium LT Hooded Down Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/FSN/FSN000U/CH.jpg">
+														<div class="productTitle">Filson Wool Mackinaw Vest - Men's</div>
+														<div class="ranking rank4">4</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/OAK/OAK00S0/GREVEN.jpg">
+														<div class="productTitle">Oakley Racing Jacket Replacement Lens</div>
+														<div class="ranking rank2">2</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/small/TNF/TNF00H7/SNOBLUGRE.jpg">
+														<div class="productTitle">The North Face Momentum Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/WIL/WIL000L/MAN.jpg">
+														<div class="productTitle">Wilderness Systems Pungo 140 Kayak - 2014 - Discontinued</div>
+														<div class="ranking rank1">1</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/small/BCC/BCC0312/CHBL.jpg">
+														<div class="productTitle">Backcountry.com Stash Shell - Men's</div>
+														<div class="ranking rank0">0</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/SDS/SDS0782/NV.jpg">
+														<div class="productTitle">Sierra Designs Stretch DriDown Hooded Jacket - Men's</div>
+														<div class="ranking rank0">0</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00VM/TNFBLABK.jpg">
+														<div class="productTitle">The North Face Atlas Triclimate Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NRA/NRA0441/MAG.jpg">
+														<div class="productTitle">Norrøna Trollveggen Gore-Tex Pro Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00UU/SNOBLUGRE.jpg">
+														<div class="productTitle">The North Face Nuptse Down Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NRA/NRA000Y/JUNFEV.jpg">
+														<div class="productTitle">Norrøna Lofoten Gore-Tex PrimaLoft Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NEW/NEW000U/PUR.jpg">
+														<div class="productTitle">New Balance 574 Stadium Jacket Shoe - Men's</div>
+														<div class="ranking rank2">2</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF5260/RECOBLBL.jpg">
+														<div class="productTitle">The North Face Denali Hooded Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/PAT/PAT2177/DARWAL.jpg">
+														<div class="productTitle">Patagonia Better Sweater Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NRA/NRA000T/ELEBL.jpg">
+														<div class="productTitle">Norrøna Lofoten Gore-Tex Pro Shell One-Piece Suit - Men's</div>
+														<div class="ranking rank6">6</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/COL/COL00BZ/AZU.jpg">
+														<div class="productTitle">Columbia Whirlibird II Interchange Jacket - Men's</div>
+														<div class="ranking rank0">0</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00VG/HIRIGRGR.jpg">
+														<div class="productTitle">The North Face Mountain Light Triclimate Jacket - Men's</div>
+														<div class="ranking rank0">0</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/ARC/ARC3672/THABL.jpg">
+														<div class="productTitle">Arc'teryx Macai Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/COL/COL4094/CHHE.jpg">
+														<div class="productTitle">Columbia Steens Mountain Full-Zip 2.0 Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00V3/MONBLA.jpg">
+														<div class="productTitle">The North Face ThermoBall Full-Zip Insulated Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/PAT/PAT00FN/COCRD.jpg">
+														<div class="productTitle">Patagonia Down Sweater Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/ARC/ARC004F/CBCOP.jpg">
+														<div class="productTitle">Arc'teryx Atom LT Hooded Insulated Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/CDG/CDG0007/PACBL.jpg">
+														<div class="productTitle">Canada Goose Expedition Down Parka - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00V2/TNFBK.jpg">
+														<div class="productTitle">The North Face ThermoBall Hooded Insulated Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NRA/NRA0487/REBRD.jpg">
+														<div class="productTitle">Norrøna Falketind PrimaLoft 60 Insulated Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00H8/VANGREGRE.jpg">
+														<div class="productTitle">The North Face Khumbu II Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00WU/COSBL.jpg">
+														<div class="productTitle">The North Face Tech 100 Fleece Pullover - 1/2-Zip - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/MAR/MAR008I/BK.jpg">
+														<div class="productTitle">Marmot Zeus Down Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NRA/NRA0364/CAV.jpg">
+														<div class="productTitle">Norrøna Lyngen Lightweight Down Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF9067/RAGREDGRE.jpg">
+														<div class="productTitle">The North Face Denali Windpro Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/MAM/MAM0910/INF.jpg">
+														<div class="productTitle">Mammut Broad Peak Light Down Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/PAT/PAT0580/NIC.jpg">
+														<div class="productTitle">Patagonia Classic Retro-X Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/MAR/MAR2900/GRE.jpg">
+														<div class="productTitle">Marmot Speed Light Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00WQ/VANGRE.jpg">
+														<div class="productTitle">The North Face SDS 1/2-Zip Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/NRA/NRA001B/NAB.jpg">
+														<div class="productTitle">Norrøna Lofoten Warm1 Fleece Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/TNF/TNF00GV/RAGRD.jpg">
+														<div class="productTitle">The North Face TKA 100 Microvelour Glacier 1/4-Zip Top - Men's</div>
+														<div class="ranking rank0">0</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/MAR/MAR2909/BLSAP.jpg">
+														<div class="productTitle">Marmot Quasar Hooded Down Jacket - Men's</div>
+														<div class="ranking rank0">0</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/MAR/MAR004M/PEABLUSAP.jpg">
+														<div class="productTitle">Marmot Hyper Lite Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+													<div class="tile product">
+														<img src="http://www.backcountry.com/images/items/medium/PAT/PAT00EP/COCRD.jpg">
+														<div class="productTitle">Patagonia Nano-Air Insulated Jacket - Men's</div>
+														<div class="ranking rank10">10</div>
+													</div>
+												</div>
+												<div class="compareProducts">results here</div>
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-defaul"><!-- Panel1-1 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-1" class="collapsed"><span class="ranking rank9">88</span><span class="ranking rank6">52</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">40.9%</span></div>north face jackets</a>
+										</div>
+										<div id="collapse1-1" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-defaul"><!-- Panel1-2 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-2" class="collapsed"><span class="ranking rank10">77</span><span class="ranking rank9">93</span><div class="percentChange positive"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="percentage">20.8%</span></div>northface womens jackets</a>
+										</div>
+										<div id="collapse1-2" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-defaul"><!-- Panel1-3 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-3" class="collapsed"><span class="ranking rank10">66</span><span class="ranking rank9">81</span><div class="percentChange positive"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="percentage">22.7%</span></div>mammut jackets</a>
+										</div>
+										<div id="collapse1-3" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-defaul"><!-- Panel1-4 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-4" class="collapsed"><span class="ranking rank6">55</span><span class="ranking rank2">14</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">74.5%</span></div>northface mens jackets</a>
+										</div>
+										<div id="collapse1-4" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-defaul"><!-- Panel1-5 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-5" class="collapsed"><span class="ranking rank5">44</span><span class="ranking rank3">24</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">45.5%</span></div>patagonia jackets</a>
+										</div>
+										<div id="collapse1-5" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+									<div class="panel panel-defaul"><!-- Panel1-6 -->
+										<div class="panel-heading">
+											<a data-toggle="collapse" data-parent="#accordion1-0" href="#collapse1-6" class="collapsed"><span class="ranking rank0">0</span><span class="ranking rank0">0</span><div class="percentChange noChange"><span class="glyphicon glyphicon-chevron-minus" aria-hidden="true"></span><span class="percentage">0.0%</span></div>running jackets</a>
+										</div>
+										<div id="collapse1-6" class="panel-collapse collapse" style="height: 0px;">
+											<div class="panel-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel1 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed"><span class="ranking rank8">77</span><span class="ranking rank7">62</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">19.5%</span></div>Snowboard Queries</a>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel2 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed"><span class="ranking rank7">66</span><span class="ranking rank3">24</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">63.6%</span></div>Climbing Queries</a>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel3 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed"><span class="ranking rank6">55</span><span class="ranking rank10">94</span><div class="percentChange positive"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="percentage">70.9%</span></div>Hike & Camp Queries</a>
+							</div>
+							<div id="collapse3" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel4 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed"><span class="ranking rank5">44</span><span class="ranking rank5">42</span><div class="percentChange negative"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span><span class="percentage">4.5%</span></div>Bike Queries</a>
+							</div>
+							<div id="collapse4" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel5 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed"><span class="ranking rank4">33</span><span class="ranking rank4">33</span><div class="percentChange noChange"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><span class="percentage">0.0%</span></div>Running Queries</a>
+							</div>
+							<div id="collapse5" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel6 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed"><span class="ranking rank3">22</span><span class="ranking rank5">59</span><div class="percentChange positive"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="percentage">168.2%</span></div>Paddle Queries</a>
+							</div>
+							<div id="collapse6" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel7 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse7" class="collapsed"><span class="ranking rank2">11</span><span class="ranking rank2">14</span><div class="percentChange positive"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><span class="percentage">27.3%</span></div>Fly Fishing Queries</a>
+							</div>
+							<div id="collapse7" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel8 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse8" class="collapsed"><span class="ranking rank1">1</span><span class="ranking rank1">1</span><div class="percentChange noChange"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><span class="percentage">0.0%</span></div>Footwear Queries</a>
+							</div>
+							<div id="collapse8" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-defaul"><!-- Panel9 -->
+							<div class="panel-heading">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse9" class="collapsed"><span class="ranking rank0">0</span><span class="ranking rank0">0</span><div class="percentChange noChange"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span><span class="percentage">0.0%</span></div>Yoga Queries</a>
+							</div>
+							<div id="collapse9" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
 			</div>
 			<div class="comparePanel">
 				<div class="title">compare case results</div>

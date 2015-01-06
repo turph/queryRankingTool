@@ -31,9 +31,8 @@
 		.caseSummary{}
 		.tileFoot{display:none;}
 	}
-	.result{
+	.product{
 		width:17%;min-width:160px;min-height:200px;text-align:center;
-		.ranking{position:absolute;bottom:5px;left:50%;padding:5px;width:40px;margin-left:-20px;}
 		.btn-group{position:absolute;bottom:5px;margin-left:-30px;}
 		.btn-primary{
 			border-color:$light-gray;
@@ -46,18 +45,44 @@
 }
 
 .compare{
-	.results{width:80%;}
-	.compareTitle{padding:6px 0;background-color:$wet-asphalt;color:white;text-align:center;text-transform:capitalize;font-weight:normal;font-size:18px;}
-	.compareResults{
-		float:left;width:100%;margin:20px 0;
-		.title{line-height:28px;color:$mid-gray;border-top:none;border-bottom:1px solid $mid-gray;text-transform:capitalize;text-align:left;font-size:14px;}
-		.ranking{@include border-radius();padding:5px;text-align:center;margin:0 5px 0 0;}
+	.results{
+		width:80%;
+		.title{
+			padding:15px 0 15px 10px;font-size:18px;color:$black;background-color:$clouds;
+			border-top:3px solid $wet-asphalt;border-bottom:1px solid $mid-gray;text-transform:capitalize;
+			.snaps{font-size:14px;font-weight:normal;color:$mid-gray;}
+		}
+	}
+	.compareProducts{
+		float:left;width:50%;
+		.product{
+			min-width:140px;min-height:180px;
+			.productTitle{font-size:12px;height:35px;}
+			.ranking{position:absolute;bottom:5px;left:50%;padding:5px;width:30px;margin-left:-17px;}
+		}
 	}		
+	.ranking{display:inline-block;@include border-radius();padding:5px;margin:0 5px 0 0;min-width:33px;text-align:right;}
+	.percentChange{
+		display:inline-block;margin:0 10px 0 0;min-width:60px;text-align:right;
+		.glyphicon{font-size:9px;margin:0 2px;}
+		.percentage{font-size:12px;}	
+	}
+	.positive{color:$ranking-10;}
+	.negative{color:$ranking-1;}
+	.noChange{color:$ranking-0;}
 	.panel-group{
 		margin:20px 0;
-		a{margin:0 0 10px 0;display:block;color:$black;}
-		.panel{border-color:$light-gray;padding:8px;}
-		.ranking{display:inline-block;padding:5px;margin:0 5px 0 0;min-width:33px;text-align:right;}
+		.panel{
+			border-color:$light-gray;margin:0 0 8px 0;
+			&:hover{border-color:$bc-lt-blue;}
+			.panel-heading{
+				padding:8px;border-radius:none;
+				a{
+					display:block;color:$black;
+					&:hover{color:$bc-lt-blue;}
+				}
+			}
+		}
 	}
 
 	.comparePanel{
