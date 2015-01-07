@@ -17,10 +17,15 @@ $(document).ready(function () {
   $("#snap3").addClass("alert alert-success");
   var delay = setTimeout(function(){
     $("#snap3").removeClass("alert alert-success");
- 	}, 5400)
-})
+ 	}, 5400);
 
-
+	function showAlert() {
+	    $("#refreshReminder").addClass("in");
+		}
+		window.setTimeout(function () {
+		    showAlert();
+		}, 8000);
+});
 </script>
 <body>
 	<div id="" class="compare">
@@ -669,7 +674,7 @@ $(document).ready(function () {
 				</section>
 				<section>
 					<div class="title">Refresh Data</div>
-					<div class="alert alert-danger" role="alert">
+					<div id="refreshReminder" class="alert alert-danger fade" role="alert">
 					  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
 					  <span class="sr-only">Error:</span>
 					  Remember to refresh snapshots periodically to work with the most up to date data 
